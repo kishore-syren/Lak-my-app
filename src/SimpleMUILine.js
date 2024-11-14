@@ -6,18 +6,6 @@ function SimpleMUILine() {
   const [timeRange, setTimeRange] = useState('1 week');
   const [dataset, setDataset] = useState([]);
 
-  // Function to generate random error messages
-  const getRandomErrorMessage = () => {
-    const errorMessages = [
-      'Error: Database connection failed',
-      'Error: Timeout occurred',
-      'Error: Invalid input detected',
-      'Error: Access denied',
-      'Error: Service unavailable',
-    ];
-    return errorMessages[Math.floor(Math.random() * errorMessages.length)];
-  };
-
   const generateData = (days) => {
     const data = [];
     let base = new Date();
